@@ -92,6 +92,15 @@ ol, ul {
     font-size: 6.5em;
     font-weight: 400;
     letter-spacing: 3px;
+    animation-name: slogan;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slogan {
+    0%{
+        transform: scale(.1);
+    }
 }
 
 .item:nth-of-type(4) h2 {
@@ -99,6 +108,15 @@ ol, ul {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
     font-weight: 300;
+    animation-name: text;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes text {
+    0%{
+        transform: translate(-100vw);
+    }
 }
 
 /* ------------------------------------------*/
