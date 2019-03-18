@@ -95,11 +95,12 @@ ol, ul {
     animation-name: slogan;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
 }
 
 @keyframes slogan {
     0%{
-        transform: scale(.1);
+        transform: scale(.5);
     }
 }
 
@@ -109,8 +110,9 @@ ol, ul {
     font-size: 1.5em;
     font-weight: 300;
     animation-name: text;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.44,-0.43,.4,1.24);
 }
 
 @keyframes text {
@@ -124,15 +126,25 @@ ol, ul {
 /* ------------------------------------------*/
 
 .item:nth-of-type(5) img {
-    /* position: absolute; */
     top: 0;
 }
 
 
 .item:nth-of-type(5) img {
-    transform: scale(1);
     max-width: 100%;
     height: auto;
+    animation-name: medusa;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+    /* animation-timing-function: cubic-bezier(.44,-0.43,.4,1.24); */
+    animation-timing-function: ease-out;
+}
+
+@keyframes medusa {
+    0%{
+        transform: translate(-50px);
+        /* transform: translateY(100px); */
+    }
 }
 
 /* ------------------------------------------*/
