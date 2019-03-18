@@ -1,0 +1,200 @@
+body {
+    margin:0;
+    font-family: 'Nanum Gothic', 'Roboto', sans-serif;
+    /* overflow: hidden; */
+    /* background-image: url("../images/background-2.png"); */
+    /* background: black; */
+}
+
+figure {
+    margin: 0;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.home-container {
+    margin:0;
+    height: 100vh;
+    background-image: url("../images/background-2.png");
+    background-size: 100% auto;
+    display: grid;
+    grid-template-columns: 25% 25% 1fr 4%;
+    /* grid-template-rows: 7% 1fr 23%; */
+    grid-template-rows: 7% 70% 23%;
+}
+
+.item {
+    /* background: lightgray; */
+    color:white;
+    /* border-left: 1px dotted lightgrey; */
+    /* border-bottom: 1px dotted lightgrey; */
+    /* padding: 10px; */
+}
+
+/* ------------------------------------------*/
+/* ----------------- LOGO item#1 ------------*/
+/* ------------------------------------------*/
+
+.item:nth-of-type(1) {
+    grid-column: 1 / span 2;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+/* ------------------------------------------*/
+/* ----------------- MENU item#2 ------------*/
+/* ------------------------------------------*/
+
+.item:nth-of-type(2) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.item:nth-of-type(2) a {
+    color: white;
+    text-decoration: none;
+    padding-right: 30px;
+    font-weight: 300;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+}
+
+/* ------------------------------------------*/
+/* ----------------- BURGER item#3 ----------*/
+/* ------------------------------------------*/
+
+.item:nth-of-type(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
+}
+
+/* ------------------------------------------*/
+/* ----------------- SLOGAN item#4 ----------*/
+/* ------------------------------------------*/
+
+.item:nth-of-type(4) {
+    grid-column: 1 / span 2;
+    /* grid-row: 2 / span 2; */
+    z-index: 1;
+}
+
+.item:nth-of-type(4) h1 {
+    margin: 0;
+    padding: 120px 0 0 170px;
+    font-size: 6.5em;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.item:nth-of-type(4) h2 {
+    padding: 90px 0 0 170px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+/* ------------------------------------------*/
+/* ----------------- IMAGE item#5 -----------*/
+/* ------------------------------------------*/
+
+.item:nth-of-type(5) img {
+    /* position: absolute; */
+    top: 0;
+}
+
+
+.item:nth-of-type(5) img {
+    transform: scale(1);
+    max-width: 100%;
+    height: auto;
+}
+
+/* ------------------------------------------*/
+/* ----------------- VERTICAL MENU item#6 -------*/
+/* ------------------------------------------*/
+.item:nth-of-type(6) {
+    height: 4%;
+    padding-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transform: rotateZ(90deg);
+}
+
+.item:nth-of-type(6) a {
+    color: white;
+    text-decoration: none;
+    padding-right: 30px;
+    font-weight: 300;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+}
+
+/* ------------------------------------------*/
+/* ----------------- BLANK item#7 -------*/
+/* ------------------------------------------*/
+
+.item:nth-of-type(7) {
+    grid-column: 1 / span 2;
+}
+
+/* ------------------------------------------*/
+/* ----------------- SOCIAL item#9 ----------*/
+/* ------------------------------------------*/
+
+.item:nth-of-type(9) {
+    margin: 0;
+    padding-right: 10px;
+    width: 40px;
+    justify-self: right;
+    align-self: center;
+    /* margin-bottom: 50px;     */
+}
+
+.social-button {
+    transform: scale(.6);
+    opacity: .6;
+}
+
+.social-button:hover {
+    opacity: 1;
+    transform: scale(.8);
+}
+
+/* ------------------------------------------*/
+/* ----------------- GET SHIT DONE ----------*/
+/* ------------------------------------------*/
+
+.get-shit-done {
+    background-image: url("../images/layer1.png");
+    background-size: 100% auto;
+    /* position: absolute; */
+    max-width: 100%;
+    height: 100vh;
+}
+
+.layer-1 {
+    background-image: url("../images/layer2.png");
+    background-size: 100% auto;
+    color: white;
+    max-width: 100%;
+    height: 100%;
+    /* position: relative;
+    z-index: 1; */
+}
+
+/* .layer-2 {
+    background-image: url("../images/layer2.png");
+    color: white;
+    height: 100vh;
+    position: relative;
+    z-index: 100;
+} */
